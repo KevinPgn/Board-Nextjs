@@ -1,0 +1,68 @@
+.proposition{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.proposition h2{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.proposition form{
+  display: flex;
+  flex-direction: column;
+}
+
+.proposition form input{
+  padding: 9px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #384152;
+  color: white;
+  font-size: 19px;
+  margin: 20px 0;
+}
+
+.proposition form input:focus{
+  outline: 2px solid #ff1ee164;
+}
+
+.proposition form button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #0267DB;
+  color: white;
+  font-size: 19px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.proposition form button:hover{
+  background: #1662ce;
+}
+
+.proposition .cancel{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #df5c61;
+  color: white;
+  font-size: 19px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.proposition .cancel:hover{
+  background: #c94b50;
+}

@@ -1,0 +1,48 @@
+main{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main h1{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+main .container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+main .container .create-button{
+  background: #0267DB;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: background 0.1s ease-in-out;
+}
+
+main .container .create-button:hover{
+  background: #0360d1;
+}
+
+main .title-content{
+  color: white;
+  font-size: 20px;
+  background: #1D2533;
+  padding: 10px 20px;
+  width: fit-content;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+main .title-content .delete-button{
+  background: transparent;
+  color:crimson;
+}

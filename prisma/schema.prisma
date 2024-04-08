@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+//Je vais pouvoir créer des titres, quand je clique dessus, je vais pouvoir décidé de mettre un commentaire sur ce titre précis
+//JE peux aussi upvote ou downvote un commentaire
+model Title {
+  id        String      @id @default(uuid())
+  title     String
+  comments  Comment[]
+}
+
+model Comment {
+  id        String      @id @default(uuid())
+  title     Title    @relation(fields: [titleId], references: [id])
+  titleId   String
+  comment   String
+  upvotes   Int
+  downvotes Int
+}
